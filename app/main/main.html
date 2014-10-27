@@ -1,6 +1,21 @@
 <h3>List of Awesome Things</h3>
-<ul>
-    <li ng-repeat="thing in awesomeThings">
-    {{thing}}
-    </li>
-</ul>
+<div class="dummy-form">
+
+    <section class"section-1" ng-form name="""section1">
+        <label for="text-input">Enter text</label>
+        <input type="text" name="text-input" value="{{text}}" ng-model="text" id="text-input" placeholder="text here" required>
+
+        <label for="number-input">Enter number</label>
+        <input type="text" name="number-input" value="{{number}}" ng-model="number" id="number-input" placeholder="123" number>
+    </section>
+
+    <section class"section-2">
+        <label for="text-min">Enter text min 2 letters</label>
+        <input type="text" name="text-min" value="" id="text-min" placeholder="min 2 letters" minLength="2">
+
+        <label for="number-max">Enter number max 100</label>
+        <input type="text" name="number-max" value="" id="number-max" placeholder="123" max="2" >
+    </section>
+
+    <a href ng-href="/step2" target="_self">Step 2</a>
+</div>

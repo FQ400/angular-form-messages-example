@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>angular-form-messages-example</title>
+
+    <base href="/" target="">
+
     <link href="lib.css" rel="stylesheet">
     <link href="app.css" rel="stylesheet">
   </head>
   <body ng-app="angular-form-messages-example">
-    <div class="container" ng-view=""></div>
+    <div class="container" ng-form name="dummyForm" ng-view=""></div>
     <script src="lib.js"></script>
     <script src="templates.js"></script>
     <script src="app.js"></script>

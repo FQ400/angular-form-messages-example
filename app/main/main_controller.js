@@ -9,9 +9,10 @@ angular.module('angular-form-messages-example-main', ['ngRoute'])
     });
 })
 .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-        'HTML5 Boilerplate',
-        'AngularJS',
-        'Karma'
-    ];
+
+
+    $scope.text = undefined;
+    $scope.number = 123;
+
+    console.log($scope.dummyForm.$error);
 });
