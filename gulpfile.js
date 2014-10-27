@@ -41,15 +41,15 @@ gulp.task('vendorCSS', function(){
 });
 
 gulp.task('copy-index', function() {
-    gulp.src('./app/index.html')    
+    gulp.src('./app/index.html')
         .pipe(gulp.dest('./build'));
 });
 
 gulp.task('watch',function(){
     gulp.watch([
-        'build/**/*.html',        
+        'build/**/*.html',
         'build/**/*.js',
-        'build/**/*.css'        
+        'build/**/*.css'
     ], function(event) {
         return gulp.src(event.path)
             .pipe(plugins.connect.reload());
@@ -57,7 +57,7 @@ gulp.task('watch',function(){
     gulp.watch('./app/**/*.js',['scripts']);
     gulp.watch(['!./app/index.html','./app/**/*.html'],['templates']);
     gulp.watch('./app/**/*.css',['css']);
-    gulp.watch('./app/index.html',['copy']);
+    gulp.watch('./app/index.html',['copy-index']);
 
 });
 

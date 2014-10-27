@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 angular.module('angular-form-messages-example', [ 'ngRoute','angular-form-messages-example-main','templates' ])
-  .config(function ($routeProvider) {
+.config(function ($routeProvider) {
     $routeProvider
-      .otherwise({
+    .otherwise({
         redirectTo: '/'
-      });
-  });
+    });
+});
