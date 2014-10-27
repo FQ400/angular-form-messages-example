@@ -1,0 +1,2 @@
+excludeInFolderSearch = "{$excludeInFolderSearch,node_modules/*,coverage/*,bower_components/*}"
+excludeInFileChooser = "{$excludeInFileChooser,node_modules/*,coverage/*,bower_components/*}"
